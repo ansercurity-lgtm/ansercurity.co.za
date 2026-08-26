@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AN Security Services | Security Solutions</title>
+
+    <meta name="description"
+          content="AN Security Services provides professional electric fencing, CCTV cameras, alarms, intercoms, gate motors and garage door security solutions.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            background: #080808;
+            color: white;
+            padding: 15px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo img {
+            height: 55px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo h2 {
+            color: #fff;
+            font-size: 22px;
+        }
+
+        .logo span {
+            color: #e00000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #e00000;
+        }
+
+        .menu-btn {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 90vh;
+            background:
+                linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
+                url("images/security-background.jpg") center/cover no-repeat;
+
+            display: flex;
+            align-items: center;
+            padding: 80px 7%;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #e00000;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: #ddd;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-red {
+            background: #e00000;
+            color: white;
+        }
+
+        .btn-red:hover {
+            background: #b50000;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #111;
+        }
+
+        /* ================= GENERAL ================= */
+
+        section {
+            padding: 80px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .section-title span {
+            color: #e00000;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+        /* ================= ABOUT ================= */
+
+        .about {
+            background: white;
+        }
+
+        .about-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-text {
+            max-width: 750px;
+            text-align: center;
+        }
+
+        .about-text .check-list {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .about-text h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        .about-text h2 span {
+            color: #e00000;
+        }
+
+        .about-text p {
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        .check-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .check-list li {
+            margin: 12px 0;
+            font-weight: bold;
+        }
+
+        .check-list li::before {
+            content: "✓";
+            color: #e00000;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* ================= SERVICES ================= */
+
+        .services {
+            background: #f1f1f1;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 35px 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+            border-bottom: 4px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-bottom: 4px solid #e00000;
+        }
+
+        .service-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: #666;
+        }
+
+        /* ================= WHY US ================= */
+
+        .why-us {
+            background: #0b0b0b;
+            color: white;
+        }
+
+        .why-us .section-title p {
+            color: #aaa;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 30px 20px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            background: #111;
+        }
+
+        .why-card .number {
+            font-size: 40px;
+            font-weight: bold;
+            color: #e00000;
+            margin-bottom: 10px;
+        }
+
+        .why-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .why-card p {
+            color: #aaa;
+        }
+
+        /* ================= CTA ================= */
+
+        .cta {
+            background:
+                linear-gradient(rgba(180,0,0,0.88), rgba(120,0,0,0.88)),
+                url("images/security-background.jpg") center/cover;
+            text-align: center;
+            color: white;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        /* ================= CONTACT ================= */
+
+        .contact {
+            background: white;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-info h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+            align-items: flex-start;
+        }
+
+        .contact-item .icon {
+            font-size: 25px;
+            color: #e00000;
+        }
+
+        .contact-item h4 {
+            margin-bottom: 3px;
+        }
+
+        .contact-item p {
+            color: #666;
+        }
+
+        .contact-item a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: #e00000;
+        }
+
+        .contact-form {
+            background: #f4f4f4;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 15px;
+            font-family: inherit;
+        }
+
+        .contact-form textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #050505;
+            color: white;
+            text-align: center;
+            padding: 30px 7%;
+        }
+
+        footer p {
+            color: #aaa;
+            margin: 5px 0;
+        }
+
+        footer span {
+            color: #e00000;
+        }
+
+        /* ================= WHATSAPP ================= */
+
+        .whatsapp {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #25D366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.1);
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 900px) {
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+        }
+
+        @media (max-width: 650px) {
+
+            header {
+                padding: 12px 5%;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 82px;
+                left: 0;
+                width: 100%;
+                background: #080808;
+                padding: 20px;
+            }
+
+            nav.active {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .hero {
+                min-height: 80vh;
+                padding: 60px 5%;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 60px 5%;
+            }
+
+            .services-grid,
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+            .cta h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+
+        <img src="images/logo.jpeg" alt="AN Security Services Logo">
+
+    </div>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <nav id="navbar">
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>
+            Your Safety.<br>
+            Our <span>Priority.</span>
+        </h1>
+
+        <p>
+            Professional security installation and maintenance
+            solutions for homes and businesses.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#contact" class="btn btn-red">
+                Request a Quote
+            </a>
+
+            <a href="#services" class="btn btn-outline">
+                Our Services
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="about-container">
+
+        <div class="about-text">
+
+            <h2>About <span>AN Security Services</span></h2>
+
+            <p>
+                AN Security Services provides professional security
+                solutions designed to protect homes, businesses and
+                valuable property.
+            </p>
+
+            <p>
+                We specialise in the installation, maintenance and
+                repair of modern security systems, providing reliable
+                solutions tailored to our customers' needs.
+            </p>
+
+            <ul class="check-list">
+
+                <li>Professional installations</li>
+
+                <li>Reliable security solutions</li>
+
+                <li>Quality equipment</li>
+
+                <li>Maintenance and repairs</li>
+
+                <li>Affordable quotations</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services" id="services">
+
+    <div class="section-title">
+
+        <h2>Our <span>Services</span></h2>
+
+        <p>
+            Complete security solutions for residential and commercial properties.
+        </p>
+
+    </div>
+
+
+    <div class="services-grid">
+
+
+        <div class="service-card">
+
+            <div class="service-icon">⚡</div>
+
+            <h3>Electric Fencing</h3>
+
+            <p>
+                Installation, maintenance and repairs of electric
+                fencing systems for improved perimeter security.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">📹</div>
+
+            <h3>CCTV Cameras</h3>
+
+            <p>
+                Professional CCTV camera installation and maintenance
+                for monitoring and protecting your property.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">🚨</div>
+
+            <h3>Alarm Systems</h3>
+
+            <p>
+                Reliable alarm systems designed to detect and alert
+                you to unauthorised access.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">🔊</div>
+
+            <h3>Intercom Systems</h3>
+
+            <p>
+                Secure communication and access-control solutions
+                for homes, offices and businesses.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">🚪</div>
+
+            <h3>Gate Motors</h3>
+
+            <p>
+                Gate motor installation, maintenance and repairs
+                for convenient automated access.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">🏠</div>
+
+            <h3>Garage Doors</h3>
+
+            <p>
+                Garage door automation, installation, maintenance
+                and repair services.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY US ================= -->
+
+<section class="why-us" id="why-us">
+
+    <div class="section-title">
+
+        <h2>Why Choose <span>AN Security?</span></h2>
+
+        <p>
+            Security you can depend on.
+        </p>
+
+    </div>
+
+
+    <div class="why-grid">
+
+        <div class="why-card">
+
+            <div class="number">01</div>
+
+            <h3>Professional</h3>
+
+            <p>
+                We aim to provide professional workmanship
+                and reliable service.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="number">02</div>
+
+            <h3>Reliable</h3>
+
+            <p>
+                Security systems should work when you need them.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="number">03</div>
+
+            <h3>Quality</h3>
+
+            <p>
+                We focus on quality security equipment and
+                proper installation.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="number">04</div>
+
+            <h3>Affordable</h3>
+
+            <p>
+                Get practical security solutions at competitive
+                prices.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CALL TO ACTION ================= -->
+
+<section class="cta">
+
+    <h2>Protect What Matters Most</h2>
+
+    <p>
+        Contact AN Security Services today for a professional
+        security solution.
+    </p>
+
+    <a href="#contact" class="btn btn-outline">
+        Get a Free Quote
+    </a>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <div class="section-title">
+
+        <h2>Contact <span>Us</span></h2>
+
+        <p>
+            Get in touch with AN Security Services today.
+        </p>
+
+    </div>
+
+
+    <div class="contact-container">
+
+
+        <div class="contact-info">
+
+            <h3>Let's Secure Your Property</h3>
+
+            <p>
+                Whether you need a new security installation,
+                maintenance or repairs, we are ready to assist.
+            </p>
+
+
+            <div class="contact-item">
+
+                <div class="icon">📞</div>
+
+                <div>
+
+                    <h4>Phone</h4>
+
+                    <p><a href="tel:+27744275002">+27 74 427 5002</a></p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="icon">💬</div>
+
+                <div>
+
+                    <h4>WhatsApp</h4>
+
+                    <p><a href="https://wa.me/27744275002" target="_blank">+27 74 427 5002</a></p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="icon">✉️</div>
+
+                <div>
+
+                    <h4>Email</h4>
+
+                    <p><a href="mailto:ansercurity@gmail.com">ansercurity@gmail.com</a></p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="icon">📍</div>
+
+                <div>
+
+                    <h4>Service Area</h4>
+
+                    <p>
+                        Contact us to find out if we service your area.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT FORM -->
+
+        <div class="contact-form">
+
+            <form onsubmit="sendWhatsApp(); return false;">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <select id="service" required>
+
+                    <option value="">Select a Service</option>
+
+                    <option>Electric Fencing</option>
+                    <option>CCTV Cameras</option>
+                    <option>Alarm Systems</option>
+                    <option>Intercom Systems</option>
+                    <option>Gate Motors</option>
+                    <option>Garage Doors</option>
+                    <option>Maintenance / Repairs</option>
+
+                </select>
+
+
+                <textarea
+                    id="message"
+                    placeholder="Tell us what you need..."
+                    required
+                ></textarea>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-red"
+                >
+                    Request a Quote
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h3>AN <span>SECURITY SERVICES</span></h3>
+
+    <p>
+        Professional Security Solutions
+    </p>
+
+    <p>
+        © 2026 AN Security Services. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a
+    class="whatsapp"
+    href="https://wa.me/27744275002"
+    target="_blank"
+    title="Chat with us on WhatsApp"
+>
+    💬
+</a>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+    function toggleMenu() {
+
+        document
+            .getElementById("navbar")
+            .classList.toggle("active");
+
+    }
+
+
+    function sendWhatsApp() {
+
+        const name =
+            document.getElementById("name").value;
+
+        const phone =
+            document.getElementById("phone").value;
+
+        const service =
+            document.getElementById("service").value;
+
+        const message =
+            document.getElementById("message").value;
+
+
+        const companyNumber = "27744275002";
+
+
+        const text =
+            "Hello AN Security Services,%0A%0A" +
+            "Name: " + name + "%0A" +
+            "Phone: " + phone + "%0A" +
+            "Service: " + service + "%0A" +
+            "Message: " + message;
+
+
+        window.open(
+            "https://wa.me/" +
+            companyNumber +
+            "?text=" +
+            text,
+            "_blank"
+        );
+
+    }
+
+</script>
+
+</body>
+</html>
